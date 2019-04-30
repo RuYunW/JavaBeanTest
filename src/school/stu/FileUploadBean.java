@@ -9,6 +9,7 @@ import java.io.PrintWriter;
 import java.util.Dictionary;
 import java.util.Hashtable;
 
+
 public class FileUploadBean {
     private String savePath, filepath, filename, contentType;
     private Dictionary fields;
