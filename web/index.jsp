@@ -1,4 +1,4 @@
-<%@ page import="school.stu.StudentForm" %><%--
+<%@ page import="school.stu.StudentForm" pageEncoding="UTF-8" %><%--
   Created by IntelliJ IDEA.
   User: HP
   Date: 2019/4/28
@@ -9,14 +9,19 @@
 <meta charset="UTF-8">
 <html>
   <head>
+
     <title>index</title>
       <style>
           @import url(index.css);
       </style>
   </head>
   <body>
+  <%
+      request.setCharacterEncoding("UTF-8");
+      response.setCharacterEncoding("UTF-8");
+  %>
   <div>
-  <form action="showInfo.jsp">
+  <form action="showInfo.jsp" accept-charset="UTF-8">
       <table>
           <tr>
               <th>学号</th>
