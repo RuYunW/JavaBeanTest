@@ -12,14 +12,13 @@
 </head>
 <body>
 
-<form action="1.jsp" enctype="multipart/form-data" method="post">
-    作者: <input type="text" name="author" />
-    <br />
-    公司: <input type="text" name="company" />
-    <br />
-    选择要上载的文件：<input type="file" name="filename">
+<form action="${pageContext.request.contextPath}/uploadFile.jsp" enctype="multipart/form-data" method="post">
+
+    上传用户：<input type="text" name="username">
+    选择要上载的文件：<br>
+    <input type="file" name="file1">
     <br>
-    <input type="submit" value="上载">
+    <input type="submit" value="提交">
 
 </form>
 

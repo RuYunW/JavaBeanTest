@@ -1,4 +1,4 @@
-<%@ page import="school.stu.StudentForm" %><%--
+<%@ page import="school.stu.StudentForm" pageEncoding="UTF-8" %><%--
   Created by IntelliJ IDEA.
   User: HP
   Date: 2019/4/28
@@ -8,10 +8,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+
     <title>ShowInfo</title>
 </head>
 <body>
-
+<%
+ request.setCharacterEncoding("UTF-8");
+ response.setCharacterEncoding("UTF-8");
+%>
       <%
           StudentForm student = new StudentForm();
            student.setStuNumber(request.getParameter("stuNumber"));
